@@ -1,0 +1,127 @@
+/* Custom styling for the Dota 2 Match Tracker */
+
+:root {
+    --dota-purple: #8861ff;
+    --dota-blue: #3c91e6;
+    --dota-dark: #1a202c;
+    --dota-darker: #141921;
+}
+
+/* Score display styling */
+.score-container {
+    border-radius: 8px;
+    background-color: var(--dota-darker) !important;
+    padding: 1.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vs-badge {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+/* Match header styling */
+.match-header {
+    background-color: var(--dota-purple);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.live-tag {
+    background-color: #dc3545;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Score styling */
+.team-score {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+.team-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.total-kills {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* Match card styling */
+.match-card, .history-match-card {
+    border: none;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.match-card:hover, .history-match-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Series info badge */
+.series-info, .history-series-info {
+    font-size: 1rem !important;
+    padding: 0.3rem 0.7rem !important;
+    margin-bottom: 0.75rem;
+}
+
+/* Match ID and duration badges */
+.match-id {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.match-duration {
+    background-color: #28a745 !important;
+}
+
+/* League badge */
+.league-badge {
+    background-color: var(--dota-purple);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Alerts and notifications */
+.alert-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+/* Map indicator (for series) */
+.map-indicator {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Tab styling */
+.nav-tabs .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--dota-purple);
+    color: white;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
