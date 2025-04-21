@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Match Tracker - Mad Dogs League</title>
+    
+    <!-- Bootstrap CSS (Dark Theme) -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="/static/css/series-history.css">
+    
+    <!-- Cache-busting version parameter for JS files -->
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-gamepad me-2"></i>
+                Dota 2 Match Tracker
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Live Matches</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text">
+                <i class="fas fa-gamepad me-1"></i> Mad Dogs League
+            </span>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        
+<div class="container-fluid mt-4">
+    <h1 class="mb-4">Dota 2 Live Matches (Version Simplifiée)</h1>
+    
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            Informations en Direct
+        </div>
+        <div class="card-body">
+            <p>Cette version simplifiée de la page charge directement les données des matchs en cours sans JavaScript complexe.</p>
+            <p>Dernière mise à jour: 00:07:06</p>
+            <a href="/" class="btn btn-primary">Retour à la version complète</a>
+            <a href="/simple" class="btn btn-secondary ml-2">Rafraîchir</a>
+        </div>
+    </div>
+    
+    <div id="matches-container" style="display: block;">
+        <h2 class="mb-3">Matchs en Cours</h2>
+        
+        
+        
+        
+            
+                <div class="match-card mb-4">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div>
+                                <span class="badge bg-warning">
+                                    
+                                </span>
+                                
+                                    <span class="badge bg-info ms-2">
+                                        Bo3
+                                        (0-1)
+                                    </span>
+                                    <span class="badge bg-secondary ms-2">
+                                        Game 2
+                                    </span>
+                                
+                                <span class="badge bg-dark ms-2" title="Match ID">
+                                    Match: 8260104081
+                                </span>
+                                
+                                <span class="badge bg-primary ms-2" title="Series ID">
+                                    Série: s_8260104081
+                                </span>
+                                
+                            </div>
+                            <div>
+                                <span class="text-muted">7:30</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-5 text-center team-radiant">
+                                    <h5>Moonlight Wispers</h5>
+                                    <div class="score">8</div>
+                                </div>
+                                <div class="col-2 text-center vs-container">
+                                    <div class="vs">VS</div>
+                                </div>
+                                <div class="col-5 text-center team-dire">
+                                    <h5>Prime Legion</h5>
+                                    <div class="score">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="match-card mb-4">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div>
+                                <span class="badge bg-warning">
+                                    
+                                </span>
+                                
+                                    <span class="badge bg-info ms-2">
+                                        Bo3
+                                        (0-1)
+                                    </span>
+                                    <span class="badge bg-secondary ms-2">
+                                        Game 2
+                                    </span>
+                                
+                                <span class="badge bg-dark ms-2" title="Match ID">
+                                    Match: 8260104631
+                                </span>
+                                
+                                <span class="badge bg-primary ms-2" title="Series ID">
+                                    Série: s_8260104631
+                                </span>
+                                
+                            </div>
+                            <div>
+                                <span class="text-muted">11:31</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-5 text-center team-radiant">
+                                    <h5>Moonwalkers</h5>
+                                    <div class="score">7</div>
+                                </div>
+                                <div class="col-2 text-center vs-container">
+                                    <div class="vs">VS</div>
+                                </div>
+                                <div class="col-5 text-center team-dire">
+                                    <h5>TOXIC TEAM</h5>
+                                    <div class="score">6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        
+    </div>
+    
+    <div class="card mt-5">
+        <div class="card-header bg-success text-white">
+            Détails des Joueurs
+        </div>
+        <div class="card-body">
+            <h3>Informations sur les joueurs</h3>
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>Nom du joueur</th>
+                        <th>ID Compte</th>
+                        <th>Équipe</th>
+                        <th>K/D/A</th>
+                        <th>Net Worth</th>
+                    </tr>
+                </thead>
+                <tbody id="player-table-body">
+                    
+                    
+                        
+                            <tr>
+                                <td>MW.BlackSin</td>
+                                <td>95501968</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonwalkers
+                                    </span>
+                                </td>
+                                <td>1/0/2</td>
+                                <td>6191</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>MW.SoLaR</td>
+                                <td>200669009</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonwalkers
+                                    </span>
+                                </td>
+                                <td>0/0/0</td>
+                                <td>5950</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>MW.GeoManser</td>
+                                <td>894758362</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonwalkers
+                                    </span>
+                                </td>
+                                <td>3/0/1</td>
+                                <td>4520</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>MW.zruze</td>
+                                <td>253075824</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonwalkers
+                                    </span>
+                                </td>
+                                <td>2/0/1</td>
+                                <td>2959</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>MW.sogi</td>
+                                <td>214494274</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonwalkers
+                                    </span>
+                                </td>
+                                <td>1/0/3</td>
+                                <td>3069</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tt.Wired</td>
+                                <td>177338286</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        TOXIC TEAM
+                                    </span>
+                                </td>
+                                <td>1/0/2</td>
+                                <td>4671</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tt. 1x1?</td>
+                                <td>839218972</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        TOXIC TEAM
+                                    </span>
+                                </td>
+                                <td>2/0/0</td>
+                                <td>5643</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tt.Doopled</td>
+                                <td>840859617</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        TOXIC TEAM
+                                    </span>
+                                </td>
+                                <td>3/0/1</td>
+                                <td>3189</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tt.Rottery</td>
+                                <td>331772647</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        TOXIC TEAM
+                                    </span>
+                                </td>
+                                <td>0/0/0</td>
+                                <td>6041</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tt.satasatasata</td>
+                                <td>236235951</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        TOXIC TEAM
+                                    </span>
+                                </td>
+                                <td>0/0/2</td>
+                                <td>2169</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Tiamani</td>
+                                <td>123546325</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonlight Wispers
+                                    </span>
+                                </td>
+                                <td>4/0/3</td>
+                                <td>3821</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>TeRakudA</td>
+                                <td>1600600400</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonlight Wispers
+                                    </span>
+                                </td>
+                                <td>1/0/0</td>
+                                <td>2619</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Stardust</td>
+                                <td>1601779169</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonlight Wispers
+                                    </span>
+                                </td>
+                                <td>3/0/4</td>
+                                <td>2222</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>BenZzarSi</td>
+                                <td>1601506216</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonlight Wispers
+                                    </span>
+                                </td>
+                                <td>0/0/1</td>
+                                <td>1190</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>indra</td>
+                                <td>1600885180</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        Moonlight Wispers
+                                    </span>
+                                </td>
+                                <td>0/0/0</td>
+                                <td>2829</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>unnv</td>
+                                <td>1600741225</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Prime Legion
+                                    </span>
+                                </td>
+                                <td>1/0/1</td>
+                                <td>1302</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Flastyle</td>
+                                <td>1601171879</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Prime Legion
+                                    </span>
+                                </td>
+                                <td>0/0/0</td>
+                                <td>3131</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Exmile</td>
+                                <td>1274758999</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Prime Legion
+                                    </span>
+                                </td>
+                                <td>0/0/2</td>
+                                <td>2963</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Sqeemz</td>
+                                <td>1601424805</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Prime Legion
+                                    </span>
+                                </td>
+                                <td>1/0/0</td>
+                                <td>1504</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Unirraros</td>
+                                <td>1601335989</td>
+                                <td>
+                                    <span class="badge bg-danger">
+                                        Prime Legion
+                                    </span>
+                                </td>
+                                <td>0/0/0</td>
+                                <td>3868</td>
+                            </tr>
+                        
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-muted">
+                <i class="fas fa-code me-1"></i> Dota 2 Match Tracker &copy; 2023
+            </span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery (some components might need it) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Pas de JavaScript complexe pour cette version simplifiée -->
+    
+    
+<!-- Pas de JavaScript complexe dans cette version simplifiée -->
+
+</body>
+</html>
